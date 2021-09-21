@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_screen"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.HomeScreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        app:lottie_rawRes="@raw/main_activity_icon"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/bank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:text="Welcome To Bank"
+        android:textColor="#DD433C55"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Transfer Safely"
+        android:textColor="#0562F3"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/all_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="#1A237E"
+        android:onClick="showAllUsers"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:text="Users Details"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/all_transactions"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF1A237E"
+        android:text="Transaction History"
+        android:textStyle="bold"
+        android:onClick="showAllTransactions"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
